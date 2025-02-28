@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "NYC Green Roofs"
+  navbar:
+    background: primary
+    right:
+      - about.qmd
+      - data.qmd
+      - resources.qmd
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+    toc: true
+
+editor: visual
+

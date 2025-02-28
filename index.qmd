@@ -1,0 +1,18 @@
+---
+title: "New York City Green Roofs"
+execute: 
+  echo: false
+---
+
+This site is an open letter and resource kit for a NYC mayor who wants to include more green infrastructure in their storm water control policy. Find out the state of New York City's green roof projects based on city data.
+
+
+_Hey, Adams, have you stepped down yet?_
+
+```{ojs} 
+viewof select = Inputs.select(["Yes", "No"], {label: "Select one"})
+```
+
+```{r}
+1 + 1
+```

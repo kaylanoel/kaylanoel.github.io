@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "New York City Green Roofs",
+    "section": "",
+    "text": "Hey, Adams, have you stepped down yet?\n\nviewof select = Inputs.select([\"Yes\", \"No\"], {label: \"Select one\"})\n\n\n\n\n\n\n\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This project was created as part of the WebGIS class at Hunter College. The assignment was designed to explore tools like ArcGIS apps for data visualization and tools like observable hq, quatro, rstudio, and github for simple website building and hosting."
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "View my dashboard"
+  },
+  {
+    "objectID": "data.html",
+    "href": "data.html",
+    "title": "Data",
+    "section": "",
+    "text": "The data for this project came from the NYC Open Data portal.\nThe dataset used was the DEP Green Infrastructure dataset. It includes many types of green infrastructure beyond green roofs including bioswales, cisterns, and detention systems.\nBefore downloading, data was filtered to include only green roof data."
+  },
+  {
+    "objectID": "data.html#details-on-the-data-and-data-filtering-process",
+    "href": "data.html#details-on-the-data-and-data-filtering-process",
+    "title": "Data",
+    "section": "Details on the data and data-filtering process",
+    "text": "Details on the data and data-filtering process\nBefore downloading any data, I first filtered it to include only what I would need.\n\n\n\n\n\n\n\nNote\n\n\n\nBy clicking ‘Actions’ you can find options to filter the dataset before downloading. This is very useful, especially if the full dataset is quite large and you are only interested in a subset of the data.\n\n\nI filtered by setting the “Asset_Type” field to only include the type “Green Roof”"
+  }
+]
