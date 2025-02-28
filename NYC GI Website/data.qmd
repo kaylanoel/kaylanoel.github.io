@@ -1,0 +1,27 @@
+---
+title: "Data"
+editor: visual
+---
+
+The data for this project came from the [NYC Open Data portal](https://opendata.cityofnewyork.us/).
+
+The dataset used was the [DEP Green Infrastructure dataset](https://data.cityofnewyork.us/Environment/DEP-Green-Infrastructure/df32-vzax/about_data). It includes many types of green infrastructure beyond green roofs including bioswales, cisterns, and detention systems.
+
+Before downloading, data was filtered to include [only green roof data](https://data.cityofnewyork.us/Environment/DEP-Green-Infrastructure/df32-vzax/explore/query/SELECT%0A%20%20%60the_geom%60%2C%0A%20%20%60asset_id%60%2C%0A%20%20%60gi_id%60%2C%0A%20%20%60dep_contra%60%2C%0A%20%20%60dep_cont_1%60%2C%0A%20%20%60row_onsite%60%2C%0A%20%20%60project_na%60%2C%0A%20%20%60asset_type%60%2C%0A%20%20%60status%60%2C%0A%20%20%60asset_x_co%60%2C%0A%20%20%60asset_y_co%60%2C%0A%20%20%60borough%60%2C%0A%20%20%60sewer_type%60%2C%0A%20%20%60outfall%60%2C%0A%20%20%60nyc_waters%60%2C%0A%20%20%60bbl%60%2C%0A%20%20%60secondary_%60%2C%0A%20%20%60community_%60%2C%0A%20%20%60city_counc%60%2C%0A%20%20%60assembly_d%60%2C%0A%20%20%60asset_leng%60%2C%0A%20%20%60asset_widt%60%2C%0A%20%20%60asset_area%60%2C%0A%20%20%60gi_feature%60%2C%0A%20%20%60tree_latin%60%2C%0A%20%20%60tree_commo%60%2C%0A%20%20%60constructi%60%2C%0A%20%20%60construc_1%60%2C%0A%20%20%60program_ar%60%2C%0A%20%20%60status_gro%60%0AWHERE%20caseless_eq%28%60asset_type%60%2C%20%22Green%20Roof%22%29/page/filter).
+
+## Details on the data and data-filtering process
+
+Before downloading any data, I first filtered it to include only what I would need. 
+
+![](images/Query_data_step_1.png)
+
+::: callout-note
+By clicking 'Actions' you can find options to filter the dataset before downloading. This is very useful, especially if the full dataset is quite large and you are only interested in a subset of the data.
+:::
+
+
+
+I filtered by setting the "Asset_Type" field to only include the type "Green Roof"
+
+![](images/Query_data_step_2.png)
+
