@@ -128,7 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -148,6 +148,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <a class="nav-link" href="./about.html">About</a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./dashboard.html">Dashboard</a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./data.html">Data</a>
   </li>  
   <li class="nav-item">
@@ -163,9 +166,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -185,10 +186,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </header>
 
-<p>This site is an open letter and resource kit for a NYC mayor who wants to include more green infrastructure in their storm water control policy. Find out the state of New York City’s green roof projects based on city data.</p>
-<p><em>Hey, Adams, have you stepped down yet?</em></p>
+<p><em>This site is a class project. It includes an open letter and resource kit for an NYC mayor who wants to include more green infrastructure in their storm water control policy. Find out about NYC’s green roofs and why they matter.</em></p>
+<section id="open-letter-to-the-mayor" class="level2">
+<h2 class="anchored" data-anchor-id="open-letter-to-the-mayor">Open Letter to the Mayor</h2>
+<p><em>Hello Mr.&nbsp;Eric Adams, have you stepped down yet?</em></p>
 <div class="cell">
-<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="12" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 11;"><span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>viewof select <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">"Yes"</span><span class="op">,</span> <span class="st">"No"</span>]<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Select one"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code hidden" id="cb1" data-startfrom="16" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 15;"><span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>viewof select <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">"Yes"</span><span class="op">,</span> <span class="st">"No"</span>]<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Select one"</span>})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="declaration">
 
@@ -196,16 +199,77 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 <div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="sourceCode cell-code hidden" id="cb2" data-startfrom="20" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 19;"><span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>letterIntro <span class="op">=</span> { </span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(select <span class="op">==</span> <span class="st">"No"</span>) { </span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Dear Mayor Adams,"</span> </span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> { </span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="st">"Welcome new mayor!"</span> </span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  } </span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-2" data-nodetype="declaration">
+
 </div>
 </div>
+</div>
+<p><span><span id="ojs-element-id-1"></span></span></p>
+<p>It’s time to think about floods. In the past two decades alone, NYC has experienced major flooding events that have caused millions of dollars in damage, created major transportation delays, and even cost the lives of New Yorkers. It’s time to get to work and think creatively about how our city handles water.</p>
+<p>Green roofs are part of the answer and we should be building more of them! They store rain water during storms, relieving pressure on sewer systems. And they have many additional benefits, including:</p>
+<ul>
+<li><p>Cooling buildings and the city</p></li>
+<li><p>Adding beautiful green space that people can enjoy</p></li>
+<li><p>Becoming layover spots for migratory birds</p></li>
+</ul>
+</section>
+<section id="whats-the-green-roof-situation-in-nyc-right-now" class="level2">
+<h2 class="anchored" data-anchor-id="whats-the-green-roof-situation-in-nyc-right-now">What’s the green roof situation in NYC right now?</h2>
+<p>Take a look at the table below to see how many green roofs are in each borough. Or explore this data further by viewing <a href="./dashboard.html">this dashboard.</a></p>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 15%">
+<col style="width: 15%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Bronx</th>
+<th>Brooklyn</th>
+<th>Manhattan</th>
+<th>Staten Island</th>
+<th>Queens</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Number of Green Roofs:</td>
+<td>24</td>
+<td>25</td>
+<td>49</td>
+<td>18</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="want-to-learn-more" class="level2">
+<h2 class="anchored" data-anchor-id="want-to-learn-more">Want to learn more?</h2>
+<p>Check out these fantastic <a href="./resources.html">resources</a> about green roofs in NYC.</p>
 
 
+<script type="ojs-module-contents">
+{"contents":[
+  {"methodName":"interpret","inline":"true","source":"htl.html`<span>${letterIntro}</span>`", "cellName":"ojs-element-id-1"}
+]}
+</script>
+</section>
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof select = Inputs.select([\"Yes\", \"No\"], {label: \"Select one\"})\n"},{"methodName":"interpretQuiet","source":"shinyInput('select')"}]}
+{"contents":[{"methodName":"interpret","cellName":"ojs-cell-1","inline":false,"source":"viewof select = Inputs.select([\"Yes\", \"No\"], {label: \"Select one\"})\n"},{"methodName":"interpret","cellName":"ojs-cell-2","inline":false,"source":"letterIntro = { \n  if(select == \"No\") { \n    return \"Dear Mayor Adams,\" \n  } else { \n    return \"Welcome new mayor!\" \n  } \n}\n"},{"methodName":"interpretQuiet","source":"shinyInput('select')"}]}
 </script>
 <script type="module">
 window._ojs.paths.runtimeToDoc = "../..";

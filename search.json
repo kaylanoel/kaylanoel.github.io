@@ -1,10 +1,38 @@
 [
   {
+    "objectID": "dashboard.html",
+    "href": "dashboard.html",
+    "title": "NYC Green Roofs",
+    "section": "",
+    "text": "View on arcgis.com"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "New York City Green Roofs",
     "section": "",
-    "text": "Hey, Adams, have you stepped down yet?\n\nviewof select = Inputs.select([\"Yes\", \"No\"], {label: \"Select one\"})\n\n\n\n\n\n\n\n\n[1] 2"
+    "text": "This site is a class project. It includes an open letter and resource kit for an NYC mayor who wants to include more green infrastructure in their storm water control policy. Find out about NYC’s green roofs and why they matter."
+  },
+  {
+    "objectID": "index.html#open-letter-to-the-mayor",
+    "href": "index.html#open-letter-to-the-mayor",
+    "title": "New York City Green Roofs",
+    "section": "Open Letter to the Mayor",
+    "text": "Open Letter to the Mayor\nHello Mr. Eric Adams, have you stepped down yet?\n\nviewof select = Inputs.select([\"Yes\", \"No\"], {label: \"Select one\"})\n\n\n\n\n\n\n\nletterIntro = { \n  if(select == \"No\") { \n    return \"Dear Mayor Adams,\" \n  } else { \n    return \"Welcome new mayor!\" \n  } \n}\n\n\n\n\n\n\n\nIt’s time to think about floods. In the past two decades alone, NYC has experienced major flooding events that have caused millions of dollars in damage, created major transportation delays, and even cost the lives of New Yorkers. It’s time to get to work and think creatively about how our city handles water.\nGreen roofs are part of the answer and we should be building more of them! They store rain water during storms, relieving pressure on sewer systems. And they have many additional benefits, including:\n\nCooling buildings and the city\nAdding beautiful green space that people can enjoy\nBecoming layover spots for migratory birds"
+  },
+  {
+    "objectID": "index.html#whats-the-green-roof-situation-in-nyc-right-now",
+    "href": "index.html#whats-the-green-roof-situation-in-nyc-right-now",
+    "title": "New York City Green Roofs",
+    "section": "What’s the green roof situation in NYC right now?",
+    "text": "What’s the green roof situation in NYC right now?\nTake a look at the table below to see how many green roofs are in each borough. Or explore this data further by viewing this dashboard.\n\n\n\n\n\n\n\n\n\n\n\n\nBronx\nBrooklyn\nManhattan\nStaten Island\nQueens\n\n\n\n\nNumber of Green Roofs:\n24\n25\n49\n18\n6"
+  },
+  {
+    "objectID": "index.html#want-to-learn-more",
+    "href": "index.html#want-to-learn-more",
+    "title": "New York City Green Roofs",
+    "section": "Want to learn more?",
+    "text": "Want to learn more?\nCheck out these fantastic resources about green roofs in NYC."
   },
   {
     "objectID": "about.html",
@@ -14,11 +42,25 @@
     "text": "This project was created as part of the WebGIS class at Hunter College. The assignment was designed to explore tools like ArcGIS apps for data visualization and tools like observable hq, quatro, rstudio, and github for simple website building and hosting."
   },
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
+    "objectID": "resources.html#primers",
+    "href": "resources.html#primers",
     "title": "Resources",
-    "section": "",
-    "text": "View my dashboard"
+    "section": "Primers",
+    "text": "Primers\n\nThe NYC Bird Alliance on how green roofs benefit birds\nNPR video about how green roofs benefit cities"
+  },
+  {
+    "objectID": "resources.html#projects",
+    "href": "resources.html#projects",
+    "title": "Resources",
+    "section": "Projects",
+    "text": "Projects\n\nNYC’s green infrastructure grant program\nLive updates about an NYC Parks green roof"
+  },
+  {
+    "objectID": "resources.html#data",
+    "href": "resources.html#data",
+    "title": "Resources",
+    "section": "Data",
+    "text": "Data\n\nGreen roof footprints assembled by The Nature Conservancy\nThe DEP Green Infrastructure dataset"
   },
   {
     "objectID": "data.html",
