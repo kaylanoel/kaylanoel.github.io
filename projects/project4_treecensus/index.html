@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.6.1, mkdocs-terminal-4.8.0">
+     
+     
+    <link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Exploring Tree Growth in NYC - Kayla's Geospatial Portfolio</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+    
+    <link href="../../assets/css/extra.css" rel="stylesheet">  
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="/" class="no-style">Kayla's Geospatial Portfolio</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Home</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Projects</span>
+                    </a>
+                    <meta property="position" content="1">
+                </li>
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../../skills/" class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Skills</span>
+                    </a>
+                    <meta property="position" content="2">
+                </li>
+                
+                    
+                    
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          <li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="terminal-mkdocs-side-nav-item" href="../..">Home</a>
+        
+    
+    
+    
+       </li>
+        
+          <li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="terminal-mkdocs-side-nav-item" href="../">Projects</a>
+        
+    
+    
+    
+       </li>
+        
+          <li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        
+            <a class="terminal-mkdocs-side-nav-item" href="../../skills/">Skills</a>
+        
+    
+    
+    
+       </li>
+        
+    </ul>
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#exploring-tree-growth-in-nyc">Exploring Tree Growth in NYC</a></li>
+        <li><a href="#overview">Overview</a></li><li><a href="#methods-tools">Methods &amp; Tools</a></li><li><a href="#key-findings">Key Findings</a></li><li><a href="#links">Links</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="exploring-tree-growth-in-nyc">Exploring Tree Growth in NYC</h1>
+<h2 id="overview">Overview</h2>
+<p>An analysis of street tree growth across New York City between 2005 and 2015, using two rounds of the NYC Street Tree Census to track diameter change by species and neighborhood. The project addresses the methodological challenge of linking individual trees across datasets that share no common ID.</p>
+<div class="no-header"></div>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Study Area</strong></th>
+<th style="text-align: left;">New York City (all five boroughs) (~780 km²)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Role</strong></td>
+<td style="text-align: left;">Solo project</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Organization</strong></td>
+<td style="text-align: left;">Hunter College — GTECH 731 Geocomputation</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Status</strong></td>
+<td style="text-align: left;">Completed</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="methods-tools">Methods &amp; Tools</h2>
+<h3 id="data-sources">Data Sources</h3>
+<ul>
+<li><code>NYC Street Tree Census 2005</code> (NYC Open Data) - tree data</li>
+<li><code>NYC Street Tree Census 2015</code> (NYC Open Data) - tree data</li>
+<li><code>202 Neighborhood Tabulation Areas</code> (NYC Open Data) - boundaries for summary statistics</li>
+</ul>
+<h3 id="processing-steps">Processing Steps</h3>
+<ol>
+<li><code>Year labeling &amp; concatenation</code> — Added a <code>year</code> column to each census dataset (2005 &amp; 2015) and concatenated them into a single GeoDataFrame.</li>
+<li><code>Tree ID creation</code> — Generated a <code>tree_id</code> for every unique BBL (Borough Block Lot Location ID) + Latin species combination, treating trees at the same address with the same species as the same individual across years.</li>
+<li><code>Duplicate removal</code> — Identified and dropped any BBL–species pair that appeared more than once within a single census year to avoid false matches.</li>
+<li><code>Joining &amp; DBH change calculation</code> — Performed an inner join on <code>tree_id</code> between the 2005 and 2015 datasets to produce a matched pair table, then computed <code>dbh_change</code> (diameter at breast height difference) for each tree.</li>
+<li><code>Spatial aggregation</code> — Joined matched trees to NTA (Neighborhood Tabulation Area) boundaries and computed mean DBH change per neighborhood for mapping.</li>
+</ol>
+<h3 id="tools-used">Tools Used</h3>
+<table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python / pandas</td>
+<td>Data cleaning, ID generation, duplicate removal</td>
+</tr>
+<tr>
+<td>GeoPandas</td>
+<td>Spatial joins, CRS management, shapefile I/O</td>
+</tr>
+<tr>
+<td>Matplotlib</td>
+<td>Bar charts of mean DBH change by species</td>
+</tr>
+<tr>
+<td>Cartopy / contextily</td>
+<td>Choropleth maps of growth by neighborhood</td>
+</tr>
+<tr>
+<td>QGIS</td>
+<td>Visual QA of tree point overlaps between census years</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><img alt="Project cover image" src="../../assets/images/trees.png" /></p>
+<h2 id="key-findings">Key Findings</h2>
+<ul>
+<li><code>London Planetree (*Platanus × acerifolia*)</code> showed the highest mean DBH change among small trees (1–5 in. starting diameter), followed closely by <code>Sugar Maple (*Acer saccharinum*)</code> and <code>Dawn Redwood (*Metasequoia glyptostroboides*)</code>.</li>
+<li>Among large trees (26–30 in. starting diameter), <code>Willow Oak (*Quercus phellos*)</code> led growth, with <code>Green Ash (*Fraxinus pennsylvanica*)</code> and <code>Red Oak (*Quercus rubra*)</code> also ranking near the top.</li>
+<li>Spatially, small-tree growth was highest in scattered neighborhoods across the Bronx and Queens, while large-tree growth showed a more varied pattern with hotspots in parts of Staten Island and northern Manhattan.</li>
+<li>Linking trees across census years required a novel BBL + species matching approach; after removing duplicates, the final matched dataset contained <code>~101,837 tree pairs</code> spanning 2005–2015.</li>
+</ul>
+<hr />
+<h2 id="links">Links</h2>
+<ul>
+<li>View code <a href="../assets/Tree_census_Paramore_Final_Project.ipynb">&gt;&gt;</a> </li>
+<li>View slidedeck <a href="../../assets/Tree_census_Geocomp%20Final%20Presentation.pdf">&gt;&gt;</a></li>
+</ul>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal" aria-label="Close">x</button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>
