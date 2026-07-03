@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One:wght@400;700&display=swap"');
+
+/* Change fonts */
+:root {
+  --font-stack: "Menlo", "Monaco", "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", serif;
+  --h1-font-size: 20px;
+}
+
+/* adjust site tile length*/
+ .logo.terminal-prompt{
+  width: 150px;
+  text-wrap-mode: wrap;
+  padding: 0px;
+ }
+
+/* align nav links to top*/
+ .terminal-menu > ul{
+  margin-top: 0px;
+  margin-bottom: 40px;
+ }
+
+ /* adjust the sidebar line's vertical position */
+aside > hr {
+  margin: 30px 0px;
+  width: 220px;
+
+}
+
+/* Hide left side navigation menu */
+.terminal-mkdocs-side-nav-items {
+  display: none;
+} 
+
+
+
+/* Hide the title in the TOC */
+aside > nav > ul > li:nth-child(1) {
+  display:none;
+}
+
+/* Style grid tiles */
+#tile_line {
+  border: solid;
+  border-width: thin;
+  padding:10px;
+  background-image: linear-gradient(#e7eff2, #e7eff2), linear-gradient(#fff, #fff);
+  background-clip: content-box, padding-box;
+}
+
+/* 2 tiles per row instead of 3*/
+.terminal-mkdocs-tile-grid {
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--page-width) / 4), 1fr));
+}
+
+/* Apply new font size */
+.terminal h1,
+.terminal h2 {
+  font-size: var(--h1-font-size);
+}
+
+/* Style photo boxes to echo the gray box from the homepage*/
+img  {
+  padding:10px;
+  border:1px solid #717578;
+  background-image: linear-gradient(#000, #000), 
+      linear-gradient(#fff,#fff);
+  background-clip: content-box, padding-box;
+}
+
+/* For Project Pages Table 1, make the header row look like row 1 */
+.no-header + table th:nth-child(2) {
+  font-weight: 500;
+}
+

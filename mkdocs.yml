@@ -1,0 +1,11 @@
+site_name: Kayla's Geospatial Portfolio
+theme:
+  name: terminal
+  features:
+    - navigation.top.search_button.hide
+nav:
+  - Home: index.md
+  - Projects: projects.md
+  - Skills: skills.md
+extra_css:
+  - assets/css/extra.css
